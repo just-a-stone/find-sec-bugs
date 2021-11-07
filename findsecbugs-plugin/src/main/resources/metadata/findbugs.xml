@@ -15,6 +15,7 @@
     * Not all bug patterns are direct vulnerabilities. For example, the identification of Struts/Spring/Rest/SOAP endpoints.
     -->
 
+    <Detector class="com.h3xstream.findsecbugs.xml.MybatisPlusTypeConversionDetector" reports="PREDICTABLE_RANDOM"/>
     <Detector class="com.h3xstream.findsecbugs.PredictableRandomDetector" reports="PREDICTABLE_RANDOM,PREDICTABLE_RANDOM_SCALA"/>
     <Detector class="com.h3xstream.findsecbugs.endpoint.ServletEndpointDetector"
               reports="SERVLET_PARAMETER,SERVLET_CONTENT_TYPE,SERVLET_SERVER_NAME,SERVLET_SESSION_ID,SERVLET_QUERY_STRING,SERVLET_HEADER,SERVLET_HEADER_REFERER,SERVLET_HEADER_USER_AGENT"/>

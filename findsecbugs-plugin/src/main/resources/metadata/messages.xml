@@ -9,6 +9,10 @@
         <AllBugsUrl>https://find-sec-bugs.github.io/bugs.htm</AllBugsUrl>
     </Plugin>
 
+    <Detector class="com.h3xstream.findsecbugs.xml.MybatisPlusTypeConversionDetector">
+        <Details>123</Details>
+    </Detector>
+
     <!-- Predictable Pseudo Random Generator (PRG) -->
     <Detector class="com.h3xstream.findsecbugs.PredictableRandomDetector">
         <Details>Detect the use of predictable Pseudo Random Generator (PRG).
